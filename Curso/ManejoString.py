@@ -47,3 +47,7 @@ Y si queremos conocer que o para que se usa algun método, se usa lo que es 'hel
 print(help(mensjae.upper))
 El contenido de las cadenas son inmutables, pero si hay variables 
 """
+#Esto es lo que es la función dir, para que se de a conocer toda la información disponible que se tenga en este tipo de dato
+print(dir(cadena))
+#Función help, es una ayuda muy reducida lo que hace el metodo de cada uno de los objetos
+print(help(cadena.find))
