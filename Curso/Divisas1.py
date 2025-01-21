@@ -35,5 +35,18 @@ def maquina_cambio():
     print(f"Hola,{nombre_usuario}. Este servicio es para darte mayor información de tu cambio")
     print(f"Fecha de operación: {datetime.now().strftime('%Y-%m-%d')}.")
     print(f"Momento del día: {momento_dia}")
-    print(f"Ingreso en dolares: {cantidad_dolares=.2f} dolares.")
-    print(f"Recibiras en MXN de {cantidad_pesos:.2f} ")
+    print(f"Ingreso en dolares: {cantidad_dolares: .2f} dolares.")
+    print(f"Recibiras en MXN de {cantidad_pesos: .2f} ")
+
+    print("\n Desglose de billetes y monedad: ")
+    for valor, cantidad in desglose.items():
+        if valor >= 5:
+            print(f"Billetes de {valor} pesos: {cantidad}")
+        else:
+            print(f"Monedas de {valor} pesos: {cantidad}")
+
+    print("\n Gracias por su tiempo")
+
+    #Ejecutar la máquina de cambio
+    if __name__ == "__main__":
+        maquina_cambio()
