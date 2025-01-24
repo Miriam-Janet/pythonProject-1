@@ -41,3 +41,13 @@ for contador in range(1, 2000):
     if contador > 100:
         break
     print(contador)
+
+print("Rango 8")
+palabra = 'Esta es una cadena' #range(18)
+for a in range(len(palabra)):
+    print(a)
+
+print("Rango 9")
+palabra = 'Esta es una cadena' #range(18)
+for a in range(len(palabra)):
+    print(palabra[a])
